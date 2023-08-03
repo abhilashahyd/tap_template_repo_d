@@ -70,14 +70,12 @@ public class BaseClass {
         File screenshotFile = (((TakesScreenshot) driver)).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(screenshotFile, new File("src\\test\\resources\\testData\\screenShot\\" + screenShotFileName + ".png"));
     }
-    public void userEnterName() throws IOException {
-        EmployeeObjects employeeObjects = new EmployeeObjects();
-        FileInputStream file = new FileInputStream("src/test/resources/testDataFromExcel/excelData.xlsx");
-        XSSFWorkbook workbook = new XSSFWorkbook(file);
-        String cellValue = workbook.getSheet("TestSheet").getRow(0).getCell(1).getStringCellValue();
-        WebElement lastNameField=employeeObjects.lasttNameField();
-        lastNameField.sendKeys(cellValue);
-    }
+    public void userEnterFromExcel() throws IOException {
+        EmployeeObjects employeeObjects = new EmployeeObjects();
+        FileInputStream file = new FileInputStream("src/test/resources/testDataFromExcel/excelData.xlsx");
+        XSSFWorkbook workbook = new XSSFWorkbook(file);
+        String cellValue = workbook.getSheet("TestSheet").getRow(0).getCell(1).getStringCellValue();
+       }
 
 //
 //    @After
