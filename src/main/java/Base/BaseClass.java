@@ -48,13 +48,13 @@ public class BaseClass {
         String browserName = prop.getProperty("browser");
 
         if (browserName.equals("chrome")) {
-            driver = WebDriverManager.chromedriver().create();
+            driver = new ChromeDriver();
             // execute in chrome driver*/
         } else if (browserName.equals("firefox")) {
-            driver = WebDriverManager.firefoxdriver().create();
+            driver = new FirefoxDriver();
             // firefox code
         } else if (browserName.equals("IE")) {
-            driver = WebDriverManager.iedriver().create();
+            driver = new EdgeDriver();
             // IE code
         }
         driver.manage().window().maximize();
