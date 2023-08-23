@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         glue = {"Steps"},
         plugin = {"pretty", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 
-public class POMRunner {
+public class TestRunner {
 }
