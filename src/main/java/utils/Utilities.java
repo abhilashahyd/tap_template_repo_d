@@ -11,6 +11,6 @@ public class Utilities{
         String screenShotFileName = currentDate.toString().replace(" ", "_").replace(":", "_");
 
         File screenshotFile = (((TakesScreenshot) driver)).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshotFile, new File("src\\test\\resources\\testData\\screenShot\\" + screenShotFileName + ".png"));
+        FileUtils.copyFile(screenshotFile, new File(FilePath.screenshotpath + screenShotFileName + ".png"));
     }
 }
