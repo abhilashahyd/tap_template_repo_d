@@ -4,7 +4,7 @@ import Base.BaseClass;
 import PageObjects.GenericObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-// import org.testng.Assert;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
