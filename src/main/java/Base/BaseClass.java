@@ -62,14 +62,14 @@ public class BaseClass {
         return driver;
     }
 
-    public void takeScreenShot() throws IOException {
+    // public void takeScreenShot() throws IOException {
 
-        Date currentDate = new Date();
-        String screenShotFileName = currentDate.toString().replace(" ", "_").replace(":", "_");
+    //     Date currentDate = new Date();
+    //     String screenShotFileName = currentDate.toString().replace(" ", "_").replace(":", "_");
 
-        File screenshotFile = (((TakesScreenshot) driver)).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshotFile, new File("src\\test\\resources\\testData\\screenShot\\" + screenShotFileName + ".png"));
-    }
+    //     File screenshotFile = (((TakesScreenshot) driver)).getScreenshotAs(OutputType.FILE);
+    //     FileUtils.copyFile(screenshotFile, new File("src\\test\\resources\\testData\\screenShot\\" + screenShotFileName + ".png"));
+    // }
     public void userEnterFromExcel() throws IOException {
         EmployeeObjects employeeObjects = new EmployeeObjects();
         FileInputStream file = new FileInputStream("src/test/resources/testDataFromExcel/excelData.xlsx");
