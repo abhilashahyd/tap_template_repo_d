@@ -1,6 +1,6 @@
-package Steps;
+package steps;
 
-import Actions.GenericAction;
+import actions.GenericAction;
 import io.cucumber.java.en.Given;
 
 
